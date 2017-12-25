@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=1]
+
+[ext_resource path="res://Sprites/Couloir_Horizontal.png" type="Texture" id=1]
+
+[sub_resource type="GDScript" id=1]
+
+script/source = "extends Sprite
+
+var type = \"COULOIR\"
+var can_be_clicked = false
+
+func _ready():
+	pass
+"
+
+[node name="Couloir" type="Sprite"]
+
+texture = ExtResource( 1 )
+centered = false
+script/script = SubResource( 1 )
+
+
